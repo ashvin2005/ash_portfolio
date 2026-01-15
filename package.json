@@ -1,0 +1,17 @@
+{
+  "name": "gui-portfolio",
+  "private": true,
+  "version": "1.0.0",
+  "workspaces": ["apps/*", "packages/*"],
+  "scripts": {
+    "dev": "npm run dev -w @gui-portfolio/web",
+    "build": "npm run build -w @gui-portfolio/web",
+    "lint": "npm run lint -w @gui-portfolio/web",
+    "preview": "npm run preview -w @gui-portfolio/web"
+  },
+  "engines": { "node": "18.x" },
+  "dependencies": {
+    "rollup": "^4.57.1",
+    "vite": "^7.3.1"
+  }
+}
