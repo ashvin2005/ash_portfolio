@@ -1,9 +1,16 @@
 
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700;800&display=swap');
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+
+@theme {
+  --color-background: hsl(220, 20%, 4%);
+  --color-foreground: hsl(120, 40%, 75%);
+  --color-card: hsl(220, 15%, 7%);
+  --color-card-foreground: hsl(120, 40%, 75%);
+  --color-muted: hsl(120, 5%, 40%);
+  --color-border: hsl(220, 10%, 12%);
+}
 
 @layer base {
   :root {

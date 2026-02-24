@@ -6,53 +6,66 @@ const Portfolio = () => {
 
   const portfolioItems = [
     {
-      id: 1, title: "LifeSaver — AI Healthcare Forecasting", category: "hackathon",
-      image: "/placeholder.svg",
-      desc: "AI healthcare forecasting with ~95% accuracy. Built for Mumbai Hacks 2025.",
+      id: 1,
+      title: "ByteLearn — AI Learning Platform",
+      category: "project",
+      image: "/Images/bytelearn.png",
+      desc: "An AI-powered learning platform to help students learn and practice coding interactively.",
       links: [
-        { title: "GitHub", url: "https://github.com/ashvin2005" }
-      ]
+        { title: "GitHub", url: "https://github.com/ashvin2005/byteLearn" },
+        { title: "Live", url: "https://byte-learn-five.vercel.app/" },
+      ],
     },
     {
-      id: 2, title: "Talkify — Video Chat App", category: "project",
-      image: "/placeholder.svg",
-      desc: "Real-time video conferencing application with WebRTC, React, and Node.js.",
+      id: 2,
+      title: "Talkify — Video Chat App",
+      category: "project",
+      image: "/Images/talkify.png",
+      desc: "Real-time video conferencing application built with WebRTC, React, and Node.js.",
       links: [
-        { title: "GitHub", url: "https://github.com/ashvin2005" }
-      ]
+        { title: "GitHub", url: "https://github.com/ashvin2005/talkify" },
+        { title: "Live", url: "https://talkify-beryl.vercel.app/" },
+      ],
     },
     {
-      id: 3, title: "Shopify Custom Theme", category: "project",
-      image: "/placeholder.svg",
-      desc: "Custom Shopify theme with dynamic sections, SEO optimization, and payment integration.",
-      links: []
-    },
-    {
-      id: 4, title: "Mumbai Hacks 2025", category: "achievement",
-      image: "/placeholder.svg",
-      desc: "Round 2 Shortlisted — Top among 3,500 teams / 20,000+ participants.",
-      links: []
-    },
-    {
-      id: 5, title: "Ctrl+Space Hackathon", category: "hackathon",
-      image: "/placeholder.svg",
-      desc: "Top 10 / 400 teams — Led the team to build a competitive solution.",
-      links: []
-    },
-    {
-      id: 6, title: "Hacktoberfest 2024 & 2025", category: "achievement",
-      image: "/placeholder.svg",
-      desc: "64 total merged PRs across open-source projects worldwide.",
+      id: 3,
+      title: "Nutrition & Obesity Tracker",
+      category: "project",
+      image: "/Images/nutrition.png",
+      desc: "A full-stack app to track nutrition intake and obesity risk with data visualizations.",
       links: [
-        { title: "GitHub", url: "https://github.com/ashvin2005" }
-      ]
-    }
+        { title: "GitHub", url: "https://github.com/ashvin2005/nutrition-obesity-app" },
+        { title: "Live", url: "https://nutrition-obesity-app-frontend.vercel.app/" },
+      ],
+    },
+    {
+      id: 4,
+      title: "SkipSmart — Smart Attendance",
+      category: "project",
+      image: "/Images/skipattend.png",
+      desc: "Smart attendance management system that calculates safe skips and attendance percentage.",
+      links: [
+        { title: "GitHub", url: "https://github.com/ashvin2005/skip-smart-attendance" },
+        { title: "Live", url: "https://skip-smart-attendance.vercel.app/" },
+      ],
+    },
+    {
+      id: 5,
+      title: "Resumate — AI Resume Builder",
+      category: "project",
+      image: "/Images/resumate.png",
+      desc: "AI-powered resume builder that generates professional resumes from user input.",
+      links: [
+        { title: "GitHub", url: "https://github.com/ashvin2005/Resumate" },
+        { title: "Live", url: "https://resumate-eight.vercel.app/" },
+      ],
+    },
   ];
 
   const filteredItems = filter === "all" ? portfolioItems : portfolioItems.filter(item => item.category === filter);
   const categories = [
-    { key: "all", label: "all" }, { key: "project", label: "project" },
-    { key: "hackathon", label: "hackathon" }, { key: "achievement", label: "achievement" },
+    { key: "all", label: "all" },
+    { key: "project", label: "project" },
   ];
 
   return (
